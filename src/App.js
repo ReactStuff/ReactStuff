@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Comment from './Components/Comment'
+import CommentBox from './Components/CommentBox'
 
 const comment = {
     date: new Date(),
@@ -21,7 +21,7 @@ class App extends Component {
                     <h2>Welcome to React</h2>
                 </div>
                 <p className="App-intro">
-                    <Comment author={comment.author}
+                    <CommentBox author={comment.author}
                              date={comment.date}
                              text={comment.text}
                     />
